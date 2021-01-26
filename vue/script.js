@@ -25,8 +25,9 @@ var slider = new Vue({
         this.contatore++;
       }
     },
-    selettore: function(){
-      
+    selettore: function(indice){
+      this.contatore = indice
+      console.log(indice);
     }
   }
 });

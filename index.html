@@ -10,13 +10,16 @@
   <title>Document</title>
 </head>
 <body>
-  <div class="container">
-    <div id="slider" class="slider-immagini">
+  <div id="slider" class="container">
+    <div class="testo-foto">
+
+    </div>
+    <div  class="slider-immagini">
       <div class="sinistra"><i @click="precedente" class="fas fa-chevron-left"></i></div>
       <div class="immagini">
       <img :src="immagine[contatore]" alt="">
       <div class="puntini">
-        <i class="fas fa-circle" v-for="(foto, index) in immagine" :class="(index == contatore) ? 'active' : ''"></i>
+        <i @click="selettore(index)"class="fas fa-circle" v-for="(foto, index) in immagine" :class="(index == contatore) ? 'active' : ''"></i>
       </div>
 
       </div>
