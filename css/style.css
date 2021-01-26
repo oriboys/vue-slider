@@ -8,17 +8,26 @@
   width: 80%;
   height: 100vh;
   margin: auto;
+  text-align: center;
   position: relative;
   background-image: linear-gradient(to right,rgb(30, 179, 235), rgb(76, 204, 23));
   /* background-color: red; */
+}
+h1.rainbow{
+  font-size: 40px;
+  padding-top: 40px;
+  background-image: linear-gradient(to right,rgb(232, 46, 41),rgb(240, 87, 31), rgb(219, 35, 235), rgb(78, 139, 244) );
+  /* seleziono il testo */
+  -webkit-background-clip: text;
+  /* lo rendo trasparente in modo da vedere lo sfondo sotto e farlo sembrare colorato */
+  -webkit-text-fill-color: transparent;
 }
 
 .slider-immagini{
   width: 900px;
   height: 600px;
-  background-color: yellow;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -27,21 +36,18 @@
 .sinistra{
   height: 100%;
   width: 100px;
-  background-color: pink;
     text-align: right;
 }
 
 .immagini{
   width: 700px;
   height: 100%;
-  background-color: red;
   position: relative;
 }
 
 .destra{
   height: 100%;
   width: 100px;
-  background-color: pink;
 }
 
 .destra i,
@@ -75,9 +81,32 @@
 }
 
 .puntini i {
+  cursor: pointer;
   color: white;
   font-size: 20px;
 }
 .puntini i.active{
   color: blue;
+}
+
+.no{
+  display: none;
+}
+
+.show{
+  display: block;
+}
+.testo-foto{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.testo-foto div{
+  width: 500px;
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
 }

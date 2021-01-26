@@ -11,8 +11,28 @@
 </head>
 <body>
   <div id="slider" class="container">
+    <h1 class="rainbow">AZORES VIBES</h1>
     <div class="testo-foto">
-
+      <!-- prima modalità -->
+      <!-- <div :class="(contatore == 0) ? 'show' : 'no'">
+        opzione 1
+      </div>
+      <div :class="(contatore == 1) ? 'show' : 'no'">
+      opzione 2
+      </div> -->
+      <!-- seconda modalità, con if -->
+      <div class="no" v-if="(contatore == 0)" :class="mostra">
+        <h2>SETE CIDADES</h2>
+      </div>
+      <div class="no" v-else-if="(contatore == 1)" :class="mostra">
+        <h2>VILA FRANCA DO CAMPO</h2>
+      </div>
+      <div class="no" v-if="(contatore == 2)" :class="mostra">
+        <h2>MIRADOURO DE SETE CIDADES</h2>
+      </div>
+      <div class="no" v-else-if="(contatore == 3)" :class="mostra">
+        <h2>NORDESTE</h2>
+      </div>
     </div>
     <div  class="slider-immagini">
       <div class="sinistra"><i @click="precedente" class="fas fa-chevron-left"></i></div>

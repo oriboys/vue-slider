@@ -7,7 +7,8 @@ var slider = new Vue({
       'https://www.beborghi.com/wp-content/uploads/2018/11/beborghi_azzorre_sao-miguel_miradouro-setes-citades-900x600.jpg',
       'https://images1.bovpg.net/r/back/it/sale/5e4a525697f71o.jpg'
     ],
-    contatore: 0
+    contatore: 1,
+    mostra: 'show'
   },
   methods: {
     precedente: function(){
