@@ -7,21 +7,24 @@ var slider = new Vue({
       'https://www.beborghi.com/wp-content/uploads/2018/11/beborghi_azzorre_sao-miguel_miradouro-setes-citades-900x600.jpg',
       'https://images1.bovpg.net/r/back/it/sale/5e4a525697f71o.jpg'
     ],
-    contatore: 3
+    contatore: 0
   },
   methods: {
     precedente: function(){
       console.log(this.contatore);
-      if (this.contatore < 0) {
-        this.contatore = this.immagine.length
+      if (this.contatore <= 0) {
+        this.contatore = this.immagine.length - 1
       } else {
         this.contatore--;
+      }
+    },
+    successiva: function(){
+      // (this.contatore >= this.immagine.lenth - 1) ? this.contatore == 0 : this.contatore++;
+      if (this.contatore >= this.immagine.length - 1) {
+        this.contatore = 0
+      } else {
+        this.contatore++;
       }
     }
   }
 });
-
-// this.contatore++;
-// if (this.contatore > this.immagine.length -1) {
-//   alert('ci')
-// }
