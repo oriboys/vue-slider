@@ -5,12 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   <title>Document</title>
 </head>
 <body>
-
-
+  <div class="container">
+    <div id="slider" class="slider-immagini">
+      <div class="sinistra"><i @click="precedente" class="fas fa-chevron-left"></i></div>
+      <div class="immagini">
+      <img :src="immagine[contatore]" alt="">
+      </div>
+      <div class="destra"><i class="fas fa-chevron-right"></i></div>
+    </div>
+  </div>
 <script type="text/javascript" src="vue/script.js">
 
 </script>
