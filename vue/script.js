@@ -11,7 +11,6 @@ var slider = new Vue({
   },
   methods: {
     precedente: function(){
-      console.log(this.contatore);
       if (this.contatore <= 0) {
         this.contatore = this.immagine.length - 1
       } else {
@@ -25,6 +24,9 @@ var slider = new Vue({
       } else {
         this.contatore++;
       }
+    },
+    selettore: function(){
+      
     }
   }
 });

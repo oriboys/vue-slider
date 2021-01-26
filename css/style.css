@@ -59,3 +59,25 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.puntini{
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: grey;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.puntini i {
+  color: white;
+  font-size: 20px;
+}
+.puntini i.active{
+  color: blue;
+}

@@ -15,6 +15,10 @@
       <div class="sinistra"><i @click="precedente" class="fas fa-chevron-left"></i></div>
       <div class="immagini">
       <img :src="immagine[contatore]" alt="">
+      <div class="puntini">
+        <i class="fas fa-circle" v-for="(foto, index) in immagine" :class="(index == contatore) ? 'active' : ''"></i>
+      </div>
+
       </div>
       <div class="destra"><i @click="successiva"class="fas fa-chevron-right"></i></div>
     </div>
